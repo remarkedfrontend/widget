@@ -1,0 +1,6 @@
+<!-- к нужной кнопке на сайте подписать href="#openReMarked"-->
+
+<script defer="defer" src="https://remarkedfrontend.github.io/widget/127410/certificateReMarked.min.js"></script>
+<script defer="defer" src="https://remarkedfrontend.github.io/widget/127410/127410_certificate/config.127410.js"></script>
+<link href="https://remarkedfrontend.github.io/widget/127410/certificateReMarked.min.css" rel="stylesheet">
+<link href="https://remarkedfrontend.github.io/widget/127410/127410_certificate/127410.css" rel="stylesheet">
