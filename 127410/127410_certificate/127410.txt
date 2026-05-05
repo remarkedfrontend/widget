@@ -1,0 +1,6 @@
+<!-- к нужной кнопке на сайте подписать href="#openReMarked"-->
+
+<script defer="defer" src="https://remarked.ru/certificateReMarked/certificateReMarked.min.js"></script>
+<script defer="defer" src="https://remarked.ru/certificateReMarked/127410/config.127410.js"></script>
+<link href="https://remarked.ru/certificateReMarked/certificateReMarked.min.css" rel="stylesheet">
+<link href="https://remarked.ru/certificateReMarked/127410/127410.css" rel="stylesheet">

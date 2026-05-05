@@ -1,0 +1,7 @@
+<!-- к нужной кнопке на сайте добавить href со значением #openReMarkedWidget -->
+
+
+<link rel="stylesheet" href="https://remarked.online/127410/stylesheet.css">
+<link rel="stylesheet" href="https://remarked.online/127410/127410_reserves/127410.css">
+<script src="https://remarked.online/127410/newidget.js"></script>
+<script src="https://remarked.online/127410/127410_reserves/config.127410.js"></script>

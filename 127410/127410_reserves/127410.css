@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@100..900&display=swap');
+
+@font-face {
+  font-family: 'bebasneuecyrillic';
+  src: url('bebasneuecyrillic.ttf') format('truetype');
+  font-weight: normal; 
+  font-style: normal;
+}
+
+:root {
+    --RM-background: #ebe5d8;
+    --RM-secondary: #a83719;
+    --RM-border: #000000;
+    --RM-border-active: #000000;
+    --RM-font-color: #000000;
+  }
+
+  /* background виджета */
+  .remarked-primary-widget {
+    background-color: var(--RM-background);
+    border-radius: 0;
+    border: 3px solid var(--RM-secondary)
+  }
+
+ /* шрифты */
+   body .remarked-primary-widget *, body .remarked-primary-widget *::placeholder, .remarked-primary-widget__restaurant-item {
+    font-family: "bebasneuecyrillic", sans-serif !important;
+   } 
+   
+   .remarked-primary-widget__form-row {
+    border-color: var(--RM-border);
+   }
+
+   /* Цвет текста */
+   .remarked-primary-widget__submit {
+    color: white !important;
+   }
+   body .remarked-primary-widget *:not(.remarked-primary-widget__policy-text a), body .remarked-primary-widget #remarked-primary-widget__qty, body .remarked-primary-widget input {
+    color: var(--RM-font-color);
+   }
+   body .remarked-primary-widget .qs-active, body .remarked-primary-widget .qs-range-end, body .remarked-primary-widget .qs-range-start {
+    color: var(--RM-border) !important;
+   }
+   /* Цвет текста у placeholder */
+   body .remarked-primary-widget *::placeholder {
+    color: var(--RM-font-color);
+   } 
+
+   /* border-color у input/textarea */
+   body .remarked-primary-widget input,.remarked-primary-widget__comment textarea, .remarked-primary-widget__times-item {
+    border-color: var(--RM-border);
+   }
+   .remarked-primary-widget select {
+    border-color: var(--RM-border) !important;
+   }
+   .remarked-primary-widget select:hover, .remarked-primary-widget select:active {
+    border-color: var(--RM-border-active) !important;
+   }
+
+   .remarked-primary-widget__times-item:hover, .remarked-primary-widget__times-item:active, .remarked-primary-widget__times-item--active {
+    background-color: var(--RM-border);
+    color: white !important;
+   }
+   /* border-color:hover у input/textarea */
+   .remarked-primary-widget__comment textarea:hover, .remarked-primary-widget__comment textarea:focus, .remarked-primary-widget input:hover, .remarked-primary-widget input:focus {
+    border-color: var(--RM-border-active) !important;
+   }
+
+   /* secondary color */
+   .remarked-primary-widget__submit:hover {
+    background-color: var(--RM-secondary) !important;
+   }
+   .remarked-primary-widget__submit {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+   }
+   .remarked-primary-widget__submit:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+   }
+   .remarked-primary-widget label::after {
+    color: var(--RM-secondary);
+   }
+   .remarked-primary-widget__policy-text a {
+    color: var(--RM-secondary);
+   }
+   .remarked-primary-widget__submit {
+    background-color: var(--RM-secondary);
+   }
+   .remarked-primary-widget__qtyplus::after, .remarked-primary-widget__qtyminus::after, .remarked-primary-widget__qtyplus::before {
+    background-color: var(--RM-secondary);
+   }
+   .remarked-primary-widget__policy-checkbox, .remarked-primary-widget__policy-checkbox--active::after {
+    border-color: var(--RM-border);
+   }
+   .remarked-widget-classic__preloader-block span {
+    background-color: var(--RM-secondary);
+   }
+.remarked-primary-widget__extraPolicyCheck-checkbox {
+border: 3px solid #000000 !important;
+}
+.remarked-primary-widget__extraPolicyCheck-checkbox--active::after {
+border-color: #000000;
+}
+.qs-datepicker * {
+  background-color : var(--RM-background) !important;
+  
+}
+
+body .remarked-primary-widget__input input,
+body .remarked-primary-widget__qty-wrap input,
+body .remarked-primary-widget__date-wrap input,
+body .remarked-primary-widget__comment textarea {
+  border-radius: 0;
+  border-width: 1px;
+  font-family: "bebasneuecyrillic", sans-serif !important;
+}
+
+body .remarked-primary-widget__input input::placeholder,
+body .remarked-primary-widget__qty-wrap input::placeholder,
+body .remarked-primary-widget__date-wrap input::placeholder,
+body .remarked-primary-widget__comment textarea::placeholder {
+  opacity: 0.6;
+}
+
+.remarked-primary-widget__title {
+    text-align: center;
+    color: var(--RM-secondary) !important;
+    margin-bottom: 12px;
+}
+
+.remarked-primary-widget__restaurant-item {
+  text-align: center;
+}
+
+.remarked-primary-widget__policy-text {
+    line-height: 24px;
+}
+
+.remarked-primary-widget__submit {
+  border-radius: 0;
+  font-weight: 400 !important;
+  transition: all 0.3s ease;
+}
+
+.remarked-primary-widget__submit:hover {
+  color: var(--RM-background) !important
+}
+
+.qs-datepicker-container {
+  background-color: var(--RM-background);
+    border-radius: 0 !important;
+    border: 1px solid var(--RM-secondary) !important
+}
+
+.remarked-primary-widget__policy-checkbox {
+  border-radius: 0;
+  border-width: 1px;
+}
+
+.remarked-primary-widget__policy-checkbox::after,
+.remarked-primary-widget__switch-checkbox--active::after {
+    left: 8px;
+    top: 4.5px;
+    border-color: var(--RM-border) !important
+}
+
+.remarked-primary-widget__times-item {
+  border-width: 1px;
+  border-radius: 0;
+}
+
+.remarked-primary-widget__times-wrap {
+  margin: 0;
+}
+
+.remarked-primary-widget__switch-checkbox {
+  border: 1px solid #000;
+  border-radius: 0;
+}
+
+.remarked-primary-widget__times-tabs-button {
+  border-width: 1px;
+  border-radius: 0;
+  border-color: var(--RM-border);
+}
+
+.remarked-primary-widget__times-tabs-button--active, .remarked-primary-widget__times-item:hover, .remarked-primary-widget__times-item:active {
+  background-color: var(--RM-border);
+  color: white !important;
+}
+
+.remarked-primary-widget__times-tabs-button.__active,
+.remarked-primary-widget__times-tabs-button:hover {
+  background-color: #000000;
+  color: #fff !important;
+}
