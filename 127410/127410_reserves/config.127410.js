@@ -68,10 +68,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
     background-color: #efdeb9;
     border: 1px solid #a83719;
     padding: 10px 12px;">
-                    Дорогой друг, обращаем ваше внимание, что к покупке на сайте доступна только часть билетов. Остальные билеты можно приобрести на кассе в режиме живой очереди. Бронирование через сайт день в день мы не принимаем, но всегда рады видеть тебя в любой день в часы работы бани. При покупке нескольких билетов в общественные бани выкупается соответствующее количество гарантированных посадочных мест, посадка за один стол организуется по возможности, но не гарантируется. Бронирование является подтверждённым после звонка администратора.
+                    Дорогой друг, на данный момент на сайте ведутся технические работы, возможны сбои в работе сайта и при покупке билетов. Бронирование доступно по телефону <a href="tel:74953236252">8 (495) 323-62-52</a>
                 </div>
             `;
         },
+    //     hookAfterRestaurant: function() {
+    //         return `
+    //             <div class="remarked-primary-widget__notice-text" style="
+    // font-size: 14px;
+    // margin-top: 10px;
+    // line-height: 1.4;
+    // background-color: #efdeb9;
+    // border: 1px solid #a83719;
+    // padding: 10px 12px;">
+    //                 Дорогой друг, обращаем ваше внимание, что к покупке на сайте доступна только часть билетов. Остальные билеты можно приобрести на кассе в режиме живой очереди. Бронирование через сайт день в день мы не принимаем, но всегда рады видеть тебя в любой день в часы работы бани. При покупке нескольких билетов в общественные бани выкупается соответствующее количество гарантированных посадочных мест, посадка за один стол организуется по возможности, но не гарантируется. Бронирование является подтверждённым после звонка администратора.
+    //             </div>
+    //         `;
+    //     },
 
         //checkboxs: [
         //    {
@@ -106,20 +119,26 @@ document.addEventListener("DOMContentLoaded", function(event) {
             const time = data.reserve.time;
             const person = Number(data.reserve.guests_count);
 
-            let pricePerPerson = 3500;
+            let pricePerPerson = 0;
 
             // Суббота и воскресенье — любое время
-            // if (dayOfWeek === 6 || dayOfWeek === 0) {
-            //     pricePerPerson = 3500;
-            // }
-            // // Понедельник-пятница, 16:00-20:00
-            // else if (dayOfWeek >= 1 && dayOfWeek <= 5 && checkTime('16:00', '20:00', time)) {
-            //     pricePerPerson = 3000;
-            // }
-            // // Вторник-пятница, 09:00-16:00
-            // else if (dayOfWeek >= 2 && dayOfWeek <= 5 && checkTime('09:00', '16:00', time)) {
-            //     pricePerPerson = 1500;
-            // }
+            if (dayOfWeek === 6 || dayOfWeek === 0) {
+                pricePerPerson = 3500;
+            }
+            // Понедельник-пятница, 16:00-20:00
+            else if (dayOfWeek >= 1 && dayOfWeek <= 5 && checkTime('16:00', '20:00', time)) {
+                pricePerPerson = 3000;
+            }
+            // Вторник-пятница, 09:00-16:00
+            else if (dayOfWeek >= 2 && dayOfWeek <= 5 && checkTime('09:00', '16:00', time)) {
+                pricePerPerson = 1500;
+            } 
+            
+            else if (dateString == '11/05/2026' && dayOfWeek == 1) {
+                pricePerPerson = 3500
+            }
+
+            
 
             sum = pricePerPerson * person;
 
